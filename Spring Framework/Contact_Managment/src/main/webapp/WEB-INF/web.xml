@@ -1,0 +1,23 @@
+<web-app>
+  <servlet>
+    <servlet-name>AddContactServlet</servlet-name>
+    <servlet-class>com.contactmanager.servlet.AddContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddContactServlet</servlet-name>
+    <url-pattern>/AddContactServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewContactsServlet</servlet-name>
+    <servlet-class>com.contactmanager.servlet.ViewContactsServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>ViewContactsServlet</servlet-name>
+    <url-pattern>/ViewContactsServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

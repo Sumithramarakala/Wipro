@@ -1,0 +1,32 @@
+package com.example.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.Dao.IStudentDao;
+import com.example.Dao.StudentDaoImpl;
+import com.example.model.Student;
+
+@Service
+public class StudentService {
+	
+	private final IStudentDao dao;
+
+	public StudentService(IStudentDao dao) {
+		super();
+		this.dao = dao;
+	}
+	
+	
+	public void saveData(Student student)
+	{
+		dao.saveStudent(student);
+	}
+	
+	public Student getStudent(Long id)
+	{
+		
+		return dao.getStudent(id);
+	}
+	
+
+}

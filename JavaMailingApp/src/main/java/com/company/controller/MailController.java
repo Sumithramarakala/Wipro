@@ -19,7 +19,7 @@ private MailService mailService;
 /*
  * {
 
-"recipient": "mdaarifraza03@gmail.com",
+"recipient": "sumithramarakala@gmail.com",
 "subject":"Test mail",
 "msgBody":" Project for mailing service"*/
 @PostMapping("/send-mail")
@@ -30,7 +30,7 @@ return mailService.sendMail(mailDetail);
 /*
  * {
 
-"recipient": "mdaarifraza03@gmail.com",
+"recipient": "sumithramarakala@gmail.com",
 "subject":"Test mail",
 "msgBody":" Project for mailing service",
 "attachment" : "C:\\Users\\Niti Dwivedi\\Pictures\\IO\\Inputoutput.png"
@@ -42,4 +42,5 @@ public String sendMailWithAttachment(@RequestBody MailDetail mailDetail)
 {
 return mailService.sendMailWithAttachment(mailDetail);
 }
+
 }

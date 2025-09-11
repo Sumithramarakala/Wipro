@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title >Student Report Card</title>
+
+  <!-- Bootstrap CSS CDN (You can also download and link locally) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles can be added here, after Bootstrap CSS to override it */
+    body {
+      padding: 20px;
+      background-color:pink; /* Light grey background */
+    }
+    .class{
+      color: yellow;
+    }
+    button {
+      background-color:red;
+      color: red;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: red;
+    }
+    .container {
+      background-color: yellowgreen;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      border: green;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #45a049;
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+    header {
+    background-color: purple;
+    color: red;
+    padding: 20px;
+    text-align: left;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    
+
+    
+  </style>
+</head>
+<body>
+
+     <header class="bg-black text-white">
+        <h1 class="text-left"> Student Website</h1>
+        <!-- <p class="text-xxl-end" id="clockhours"></p> -->
+        <p class="text-sm-end">Information Availbale  </p>
+       
+     </header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MyDeatils</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Student</a>
+        </li>
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link " href="#">Services</a>
+        </li> -->
+
+         <li class="nav-item">
+          <a class="nav-link " href="#">Contact </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <h1 class="my-4 text-center">Student Report Card Generator</h1>
+
+    <div class="card p-4 mb-4">
+      <form id="marksform">
+        <div class="mb-3">
+          <label for="studentName" class="form-label">Student Name:</label>
+          <input type="text" class="form-control" id="studentName" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="subjectMarks" class="form-label">Subject Marks (e.g., Math:85, Science:92, English:78):</label>
+          <textarea class="form-control" id="subjectMarks" rows="5" placeholder="Enter subject and marks, separated by commas. E.g., Math:85, Science:92" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Generate Report</button>
+      </form>
+    </div>
+
+    <!-- <div class="card p-4">
+      <h2 class="mb-3">Student Report</h2>
+      <div id="result"></div>
+    </div> -->
+    <div class="card p-4 result-section">
+      <h2 class="mb-3">Student Report</h2>
+      <div id="result">
+        <!-- The student report table will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center">
+       &copy; 2025 student Website .
+  
+     </footer>
+
+  <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="report.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    background-color: #f0f0f0; /* Light gray */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section1 {
+    background-color: #00ff00; /* Green */
+    padding: 50px;
+    color: white;
+}
+
+.section2 {
+    background-color: #ffa500; /* Orange */
+    padding: 50px;
+    color: white;
+}
+
+.section3 {
+    background-color: #ffc0cb; /* Pink */
+    padding: 50px;
+    color: white;
+}

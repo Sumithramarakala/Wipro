@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Management</title>
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <style>
+    body{
+        
+        text-align: center;
+        
+    
+        
+      background-image: url("https://images.unsplash.com/photo-1682778418768-16081e4470a1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+    }
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin: 0 auto;
+  background-color: aqua;
+    }
+    form{
+        color:blue;
+
+    }
+    h2{
+        color: white;
+        background: #000;
+    }
+
+
+    </style>
+<body>
+    <header class="bg-black text-white">
+        <h1 class="text-left"> Restaurant</h1>
+         <p class="text-xxl-end" id="clockhours"></p> 
+        <p class="text-sm-end">Information Availbale  </p>
+       
+     </header>
+    <h1 style="background-color: blue; ">Restaurant Menu Management</h1>
+
+    <h2>Add/Edit Menu Item</h2>
+    <form id="menu-form">
+        <input type="hidden" id="item-id">
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" required><br><br>
+
+        <label for="item-description">Description:</label>
+        <textarea id="item-description"></textarea><br><br>
+
+        <label for="item-category">Category:</label>
+        <input type="text" id="item-category"><br><br>
+
+        <label for="item-price">Price:</label>
+        <input type="number" id="item-price" step="10" required><br><br>
+
+        <label for="item-availability">Availability:</label>
+        <select id="item-availability">
+            <option value="available">Available</option>
+            <option value="unavailable">Unavailable</option>
+        </select><br><br>
+
+        <button type="submit">Save Item</button>
+        <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+
+    <h2>Menu Items</h2>
+    <table id="menu-table" style="text-align: center;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Menu items will be displayed here -->
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <footer class="bg-dark text-white text-center">
+       &copy; 2025 restaurent Website .
+  
+     </footer>
+    <script src="restaurent.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+
+
+   </body>
+</html>

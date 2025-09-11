@@ -1,0 +1,38 @@
+/* Custom CSS for Spring Flowers School */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+#timetable-container {
+    padding: 20px;
+    background-color: yellowgreen;
+}
+thead{
+    background:red;
+}
+
+/* Example of Flexbox usage in a responsive context */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.flex-item {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Media query example for small screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        align-items: center; /* Centers items vertically */
+    }
+}

@@ -1,3 +1,107 @@
+class Main {
+    public static void main(String[] args) {
+        String str="sumi ma";
+        String[] s=str.split(" ");
+        System.out.println(s);
+        for(String string: s){
+        StringBuilder sb=new StringBuilder(string).reverse();
+        System.out.print(" "+sb);}
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+class Main {
+    public static void main(String[] args) {
+        String str="sumi ma";
+        int count=0;
+        char[] s=str.toCharArray();
+        for(int i=0;i<str.length();i++){
+            for(int j=i+1;j<str.length();j++){
+                if(s[i]==s[j]){
+                    System.out.println(s[j]);
+                    //count++;
+                    break;
+                }
+               
+            }
+        }
+         count++;
+                System.out.println("Count is: "+count);
+    }
+}
+
+----------------------------------------------------------------------
+class Main {
+    public static void main(String[] args) {
+        int x=10;
+        int y=8;
+        x=x+y;
+        y=x-y;
+        x=x-y;
+        System.out.println(x+ " "+y);
+            }
+}
+_________________________________________________________________________________________________
+deleting duplicate character from the String
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+         String str="sumiithraa";
+        StringBuilder sb = new StringBuilder();
+if(!str.isEmpty()) {
+    char[] chars = str.toCharArray();
+    //Arrays.sort(chars);
+
+    sb.append(chars[0]);
+    for (int i = 1; i < chars.length; i++) {
+        if (chars[i] != chars[i - 1]) {
+            sb.append(chars[i]);
+        }
+    }
+}
+System.out.println(sb);
+            }
+}
+__________________________________________________________________________________________________
+String is empty or not
+
+class Main {
+    public static void main(String[] args) {
+        String str1="Sumi";
+        String str2=null;
+        String str3="";
+        System.out.println("String is  "+isNullEmpty(str1));
+    System.out.println("String is  "+isNullEmpty(str2));
+    System.out.println("String is  "+isNullEmpty(str3));
+    
+ }
+
+public static String isNullEmpty(String str){
+    if(str==null){
+        return "null";
+    }else if(str.isEmpty()){
+        return "empty";
+    }else{
+        return "not empty";
+    }
+    }
+}
+__________________________________________________________________________________________________
+printing A -Z
+class Main {
+    public static void main(String[] args) {
+        for(int i=65;i<=90;i++){
+            System.out.print((char)i + " ");
+        }
+       
+    }
+}
+
+
+
+
+
 -- SQL  DDL  ( defining the structure of database and tables ), DML , DCL , TCL , DQL
 
 create database wiprotraining;
